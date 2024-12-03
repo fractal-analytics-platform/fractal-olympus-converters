@@ -110,7 +110,7 @@ def thresholding_label_task(
     )
 
 
-def process_img(int_img: np.array, threshold: int, min_size: int = 50) -> np.array:
+def process_img(int_img: np.ndarray, threshold: int, min_size: int = 50) -> np.ndarray:
     """Image processing function, to be replaced with your custom logic
 
     Numpy image & parameters in, label image out

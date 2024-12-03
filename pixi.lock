@@ -1027,8 +1027,8 @@ packages:
   requires_python: '>=2.7,!=3.0,!=3.1,!=3.2,!=3.3,!=3.4,<4'
 - pypi: .
   name: fractal-olympus-converters
-  version: 0.1.1.dev2+gc55b63e.d20241203
-  sha256: 77c1d255eb602ae9f26b0824a995d8d800dda7a9c3bb0f450ec301e7d4ef217e
+  version: 0.1.1.dev3+g5518df4.d20241203
+  sha256: 9fa38110770887dd6b1ec6f54d2f946006d437953d148d17adc8f234ed01aa0e
   requires_dist:
   - bioio
   - bioio-bioformats

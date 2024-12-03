@@ -1,6 +1,5 @@
-"""
-OME Zarr converters for Olympus Microscopes
-"""
+"""OME Zarr converters for Olympus Microscopes"""
+
 from importlib.metadata import PackageNotFoundError, version
 
 try:
