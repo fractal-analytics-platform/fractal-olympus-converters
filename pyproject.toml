@@ -96,7 +96,7 @@ default = { solve-group = "default" }
 dev = { features = ["dev"], solve-group = "default" }
 
 [tool.pixi.tasks]
-bm = "python "
+bm = "python src/fractal_olympus_converters/dev/create_manifest.py"
 
 [tool.pixi.dependencies]
 scyjava = ">=1.10.0,<2"
