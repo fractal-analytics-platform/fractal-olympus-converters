@@ -3,8 +3,8 @@ _commit: v0.4.2
 _src_path: gh:fractal-analytics-platform/fractal-tasks-template
 author_email: lorenzo.cerrone@uzh.ch
 author_name: Lorenzo Cerrone
-package_name: fractal_olympus_converter
-project_name: fractal-olympus-converter
+package_name: fractal_olympus_converters
+project_name: fractal-olympus-converters
 project_short_description: OME Zarr converters for Olympus Microscopes
 project_url: ''
 
