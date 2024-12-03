@@ -23,13 +23,20 @@ license = { text = "BSD-3-Clause" }
 authors = [{ name = "Lorenzo Cerrone", email = "lorenzo.cerrone@uzh.ch" }]
 
 # Required Python version and dependencies
-requires-python = ">=3.9"
-dependencies = ["fractal-tasks-core == 1.3.3", "scikit-image"]
+requires-python = ">=3.10, <3.13"
+dependencies = [
+    "fractal-tasks-core == 1.3.3",
+    "ngio==0.1.0",
+    "bioio",
+    "bioio-bioformats",
+]
 
 # Optional dependencies (e.g. for `pip install -e ".[dev]"`, see
 # https://peps.python.org/pep-0621/#dependencies-optional-dependencies)
 [project.optional-dependencies]
 dev = [
+    "notebook",
+    "matplotlib",
     "devtools",
     "hatch",
     "pytest",
@@ -76,3 +83,20 @@ ignore = [
 docstring-code-format = true
 docstring-code-line-length = 89
 skip-magic-trailing-comma = false # default is false
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+fractal-olympus-converters = { path = ".", editable = true }
+
+[tool.pixi.environments]
+default = { solve-group = "default" }
+dev = { features = ["dev"], solve-group = "default" }
+
+[tool.pixi.tasks]
+bm = "python "
+
+[tool.pixi.dependencies]
+scyjava = ">=1.10.0,<2"

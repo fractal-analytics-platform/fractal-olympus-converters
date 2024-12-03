@@ -5,7 +5,8 @@
       "name": "Thresholding Label Task",
       "category": "Segmentation",
       "tags": [
-        "Instance Segmentation"
+        "Instance Segmentation",
+        "Classical segmentation"
       ],
       "executable_parallel": "thresholding_label_task.py",
       "meta_parallel": {
