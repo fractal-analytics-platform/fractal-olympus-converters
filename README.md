@@ -1,4 +1,4 @@
-# fractal-olympus-converter
+# fractal-olympus-converters
 
 OME Zarr converters for Olympus Microscopes
 

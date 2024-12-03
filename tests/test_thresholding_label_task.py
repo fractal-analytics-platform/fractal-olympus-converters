@@ -5,7 +5,7 @@ import pytest
 from devtools import debug
 from fractal_tasks_core.channels import ChannelInputModel
 
-from fractal_olympus_converter.thresholding_label_task import thresholding_label_task
+from fractal_olympus_converters.thresholding_label_task import thresholding_label_task
 
 
 @pytest.fixture(scope="function")

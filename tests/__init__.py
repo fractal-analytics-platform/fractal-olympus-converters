@@ -1,10 +1,10 @@
 import json
 from pathlib import Path
 
-import fractal_olympus_converter
+import fractal_olympus_converters
 
-PACKAGE = "fractal_olympus_converter"
-PACKAGE_DIR = Path(fractal_olympus_converter.__file__).parent
+PACKAGE = "fractal_olympus_converters"
+PACKAGE_DIR = Path(fractal_olympus_converters.__file__).parent
 MANIFEST_FILE = PACKAGE_DIR / "__FRACTAL_MANIFEST__.json"
 with MANIFEST_FILE.open("r") as f:
     MANIFEST = json.load(f)
